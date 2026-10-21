@@ -307,7 +307,7 @@ document.getElementById("formulario").addEventListener("submit", function(e) {
   const mensaje = document.getElementById("mensaje").value.trim();
 
   const asunto = encodeURIComponent("Consulta para NEXORA: " + servicio);
-  const cuerpo = encodeURIComponent(
+  const cuerpo = 
     "Nombre: " + nombre + "\nCorreo: " + correo +
     "\nServicio: " + servicio + "\n\nMensaje:\n" + mensaje
   );
