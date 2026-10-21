@@ -316,7 +316,7 @@ document.getElementById("formulario").addEventListener("submit", function(e) {
     "Formulario validado. Se abrirá tu aplicación de correo; falta configurar el email del destinatario.";
 
   // Cambia la dirección de abajo por el email real de NEXORA.
-  window.location.href = "mailto:?subject=" + asunto + "&body=" + cuerpo;
+window.location.href = "mailto:TU_CORREO@gmail.com?subject=" + encodeURIComponent(asunto) + "&body=" + encodeURIComponent(cuerpo);
 });
 </script>
 </body>
